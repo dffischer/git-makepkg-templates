@@ -14,4 +14,4 @@ To use it, [install this package](https://aur.archlinux.org/packages/git-makepkg
 # template input; name=git
 ```
 
-to your PKGBUILD and process it with `makepkg-template`.
+to your PKGBUILD and process it with `makepkg-template`. See the PKGBUILD of git-makepkg-template itself for an example.
