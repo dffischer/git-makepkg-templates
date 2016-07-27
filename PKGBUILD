@@ -12,7 +12,7 @@ depends=('pacman>=4.1.2' 'git')
 
 package() {
   cd "$_gitname"
-  install -m644 -Dt "$pkgdir/usr/share/$pkgname/" README.md
+  install -m644 -Dt "$pkgdir/usr/share/$pkgname/" README.md PKGBUILD
   local destdir="$pkgdir/usr/share/makepkg-template"
   find -iname '*.template' -type f -exec install -m644 -Dt "$destdir" '{}' +
   cd "$destdir"
