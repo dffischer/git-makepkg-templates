@@ -4,7 +4,7 @@ This repository collects templates for [pacman](https://www.archlinux.org/pacman
 
 1. add git as a make dependency,
 2. care for the built package to provide and conflict with its non-git variant and
-3. clone `$url` as a package source, to be placed into the `$srcdir` as `$pkgname`.
+3. clone `$url` as a package source, to be placed into the `$srcdir` as `$pkgname`, without its *-git* suffix.
  - These can be overwritten by setting `$_giturl` and `$_gitname`, respectively, before inputting the template.
 4. Also, [a `pkgver` function](https://wiki.archlinux.org/index.php/VCS_package_guidelines#Git) will be inserted. It uses tags if available and automatically fall back to counting revisions otherwise.
 
